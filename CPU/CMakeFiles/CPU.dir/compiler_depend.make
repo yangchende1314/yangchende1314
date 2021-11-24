@@ -342,6 +342,7 @@ CMakeFiles/CPU.dir/main.cpp.o: main.cpp \
   Single/Elastic.h \
   Single/CMHeap.h \
   Struct/CMSketch.h \
+  Struct/Edge_sketch.h \
   Single/CountHeap.h \
   Single/SpaceSaving.h \
   Struct/StreamSummary.h \
@@ -462,6 +463,8 @@ Common/hash.h:
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/11/bits/refwrap.h:
+
+Struct/Edge_sketch.h:
 
 /usr/include/bits/fp-logb.h:
 

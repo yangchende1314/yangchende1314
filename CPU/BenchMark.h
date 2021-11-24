@@ -7,6 +7,7 @@
 #include "Univmon.h"
 #include "Elastic.h"
 #include "CMHeap.h"
+#include "Edge_sketch.h"
 #include "CountHeap.h"
 #include "SpaceSaving.h"
 

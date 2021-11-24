@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/yangchen/CocoSketch/CPU/. -I/home/yangchen/CocoSketch/CPU/Common -I/home/yangchen/CocoSketch/CPU/Struct -I/home/yangchen/CocoSketch/CPU/Single -I/home/yangchen/CocoSketch/CPU/Multiple
+CXX_INCLUDES = -I/home/yangchen/yancghen-sketch/yangchende1314/CPU/. -I/home/yangchen/yancghen-sketch/yangchende1314/CPU/Common -I/home/yangchen/yancghen-sketch/yangchende1314/CPU/Struct -I/home/yangchen/yancghen-sketch/yangchende1314/CPU/Single -I/home/yangchen/yancghen-sketch/yangchende1314/CPU/Multiple
 
 CXX_FLAGS = -std=gnu++14
 
