@@ -11,3 +11,4 @@ include_directories(Single)
 include_directories(Multiple)
 
 add_executable(CPU main.cpp)
+add_executable(CPU2 main2.cpp)
