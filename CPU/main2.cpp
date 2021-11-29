@@ -60,12 +60,20 @@ int main(int argc, char *argv[]) {
 	CMSketch<uint64_t, uint64_t> *sumB = new CMSketch<uint64_t, uint64_t>(500000);
 
         for(int i = 0; i < graph.size(); i++)
-		for(int j =0; j < graph[i].size(); j++)
+		for(int j =0; j < graph[i].size(); j++) {
 			items->Insert(i);
-	                //items->Insert
-        
+	                sumA->Insert(i, items->Query(graph[i][j]));
+		}
+         for(int i = 0; i < graph.size(); i++)
+                for(int j =0; j < graph[i].size(); j++) {
+                        items->Insert(i);
+                        sumB->Insert(i, items->Query(graph[i][j]));
+                }
+
+
+        //cout <<  items->Query(100); 
 	for(int i = 0; i < graph.size(); i++)
-		cout << "Results" << <<items->Query(i) << endl;
+		cout << "Results" << i << '\t' << sumB->Query(i) << '\t'<< sumA->Query(i) << '\t' << sumB->Query(i) - sumA->Query(i) << endl;
 
 	/*
     for(uint32_t i = 1;i < argc;++i) {
