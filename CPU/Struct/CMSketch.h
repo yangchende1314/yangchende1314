@@ -23,10 +23,10 @@ public:
         delete [] sketch;
     }
 
-    void Insert(const DATA_TYPE item) {
+    void Insert(const DATA_TYPE item, int f = 1) {
         for(uint32_t i = 0; i < HASH_NUM; ++i) {
             uint32_t position = hash(item, i) % LENGTH;
-            sketch[i][position] += 1;
+            sketch[i][position] += f;
         }
     }
 
